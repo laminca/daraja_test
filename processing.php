@@ -65,7 +65,8 @@ $amount=$_POST['amount'];
 
 
 $url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
-$callback_url='https://webhook.site/ca8f670e-11e1-4b1a-9148-59f7e2518765/';
+$callback_url='https://darajatest-laminca.herokuapp.com/callback.php';
+//$callback_url='https://webhook.site/ca8f670e-11e1-4b1a-9148-59f7e2518765/';
 $stkheaders =['Content-Type: application/json','Authorization: Bearer '.$access_token];
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
@@ -75,7 +76,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER,$stkheaders);
 $data = array(
     "BusinessShortCode" => 174379,
     "Password" => $password, "Timestamp" => $timestamp, "TransactionType" => 'CustomerPayBillOnline', 'Amount' => $amount,
-    'PartyA' => $partyA, 'PartyB' => 174379, 'PhoneNumber' =>$partyA, 'CallBackURL' => 'https://webhook.site/ca8f670e-11e1-4b1a-9148-59f7e2518765/',
+    'PartyA' => $partyA, 'PartyB' => 174379, 'PhoneNumber' =>$partyA, 'CallBackURL' => $callback_url,
     'AccountReference' => $admno, 'TransactionDesc' => 'Payment for fees for Student '.$admno.' in account number Ebenezar Academy'
 );
 $json = json_encode( $data);
