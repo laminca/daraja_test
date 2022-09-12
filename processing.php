@@ -66,7 +66,7 @@ $amount=$_POST['amount'];
 
 $url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 //$callback_url='https://darajatest-laminca.herokuapp.com/callback.php';
-$callback_url='https://7be4-196-202-217-213.in.ngrok.io';
+$callback_url='https://7be4-196-202-217-213.in.ngrok.io/';
 //$callback_url='https://webhook.site/ca8f670e-11e1-4b1a-9148-59f7e2518765/';
 $stkheaders =['Content-Type: application/json','Authorization: Bearer '.$access_token];
 $ch = curl_init();
