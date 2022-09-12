@@ -135,7 +135,7 @@
     
     <form action="processing.php" class="decor" method="post">
     <h1>Ebenezar Academy</h1>
-        <img src="/Daraja ofl/json/mpesa_express/pngwing.com.png" alt="" height="300" width="500">
+        <img src="pngwing.com.png" alt="" height="300" width="500">
         
       <div class="form-left-decoration"></div>
       <div class="form-right-decoration"></div>
