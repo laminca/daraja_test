@@ -67,7 +67,7 @@ $amount=$_POST['amount'];
 $url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 //$callback_url='http://mpesa-requestbin.herokuapp.com/1pnud0b1/';
 //$callback_url='https://webhook.site/ca8f670e-11e1-4b1a-9148-59f7e2518765';
-$callback_url='http://r688p8vc6fzu92u3.b.requestbin.net/';
+$callback_url='https://enh3jov7e2odj.x.pipedream.net/';
 $stkheaders =['Content-Type: application/json','Authorization: Bearer '.$access_token];
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
