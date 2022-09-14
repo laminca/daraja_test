@@ -64,7 +64,7 @@ $amount=$_POST['amount'];
 //$initiate_url;
 
 
-$url = 'https://typedwebhook.tools/webhook/83fe9ef6-267a-4d2c-971d-c729d2e1367a';
+$url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 //$callback_url='http://mpesa-requestbin.herokuapp.com/1pnud0b1/';
 //$callback_url='https://webhook.site/ca8f670e-11e1-4b1a-9148-59f7e2518765';
 $callback_url='https://ek26d1kbz7.parrotbay.io';
